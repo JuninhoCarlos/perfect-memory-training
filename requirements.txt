@@ -1,0 +1,6 @@
+coverage==7.5.1
+pytest==8.1.1
+python-dotenv==1.0.1
+rdflib==7.0.0
+requests==2.31.0
+responses==0.25.0

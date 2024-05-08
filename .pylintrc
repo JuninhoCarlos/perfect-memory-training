@@ -1,0 +1,13 @@
+[MASTER]
+
+disable=abstract-method,
+        missing-docstring,
+        import-error,
+        broad-exception-caught,
+        no-name-in-module
+
+
+
+[FORMAT]
+# Maximum number of characters on a single line.
+max-line-length=100

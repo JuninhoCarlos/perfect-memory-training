@@ -1,0 +1,36 @@
+id,restaurant_id,restaurant_city,restaurant_zipcode,restaurant_province,pizza_id,pizza_price,pizza_name,pizza_description
+0,AVwc_6KEIN2L1WUfrKAH,Bend,97701,OR,0,15.5,Bianca Pizza,
+1,AVwc_6KEIN2L1WUfrKAH,Bend,97701,OR,1,18.95,Cheese Pizza,
+2,AVwc_6qRByjofQCxkcxw,Los Angeles,90049,Brentwood,2,12.0,"Pizza, Margherita",
+3,AVwc_6qRByjofQCxkcxw,Los Angeles,90049,Brentwood,3,13.0,"Pizza, Mushroom",
+4,AVwc_6qRByjofQCxkcxw,Los Angeles,90049,Brentwood,4,13.0,"Pizza, Puttenesca","Olives, onions, capers, tomatoes"
+5,AVwc_6qRByjofQCxkcxw,Los Angeles,90049,Brentwood,5,15.0,"Pizza, Salami Piccante",
+6,AVwc_6qRByjofQCxkcxw,Los Angeles,90049,Brentwood,6,15.0,"Pizza, White Truffle Meat Sauce",
+7,AVwc_7d_IN2L1WUfrKNN,Los Angeles,90027,Los Feliz,7,7.99,Cheese Pizza,Choose a pizza size.
+8,AVwc_7d_IN2L1WUfrKNN,Los Angeles,90027,Los Feliz,8,7.99,Hawaiian Pizza,"Canadian bacon, pineapple."
+9,AVwc_7d_IN2L1WUfrKNN,Los Angeles,90027,Los Feliz,9,11.99,Meat Lover Pizza,
+10,AVwc_7d_IN2L1WUfrKNN,Los Angeles,90027,Los Feliz,10,5.99,Pizza Sub,
+11,AVwc_7d_IN2L1WUfrKNN,Los Angeles,90027,Los Feliz,11,5.99,Super Pizza Sub,
+12,AVwc_7d_IN2L1WUfrKNN,Los Angeles,90027,Los Feliz,12,10.99,Veggie Pizza,
+13,AVwc_8WAByjofQCxkdDA,Houston,77003,TX,13,9.95,Create Your Own Pizza,Choose any of your own toppings to make it your own
+14,AVwc_abAIN2L1WUfrEps,Hyannis,2601,MA,14,8.95,Cheese Pizza,
+15,AVwc_abAIN2L1WUfrEps,Hyannis,2601,MA,15,10.95,Pepperoni Pizza,
+16,AVwc_dHKkufWRAb51Kei,Provo,84602,UT,16,,House Made Pizza,
+17,AVwc_dHKkufWRAb51Kei,Provo,84602,UT,17,15.71,Mexican Pizza Dip,Seven layer bean dip
+18,AVwc_dHKkufWRAb51Kei,Provo,84602,UT,18,,Pepperoni Pizza,1 each (324.00 g)
+19,AVwc_dHKkufWRAb51Kei,Provo,84602,UT,19,,Pizza Bagel,1 each (149.18 g)
+20,AVwc_gjWByjofQCxkYOz,Spring,77380,TX,20,,Pizza Con Uovo Fritto,
+21,AVwc_h3pkufWRAb51LOO,Chicago,60611,Ontario Street,21,10.99,Pizza Margherita,
+22,AVwc_h3pkufWRAb51LOO,Chicago,60611,Ontario Street,22,10.99,Pizza Margherita,
+23,AVwc_h3pkufWRAb51LOO,Chicago,60611,Ontario Street,23,,Pizza Schiacchiata Alla Toscana,
+24,AVwc_h3pkufWRAb51LOO,Chicago,60611,Ontario Street,24,,Pizza Schiacchiata Alla Toscana,
+25,AVwc_jdF_7pvs4fz1IZm,West Chester,19380,PA,25,,Pizza Bagel,with pepperoni
+26,AVwc_jdF_7pvs4fz1IZm,West Chester,19380,PA,26,,Pizza Bagel,with mushroom
+27,AVwc_jdF_7pvs4fz1IZm,West Chester,19380,PA,27,,Pizza Bagel,with pepperoni & mushroom
+28,AVwc_jdF_7pvs4fz1IZm,West Chester,19380,PA,28,2.59,Pizza Bagel (plain),
+29,AVwc_jdF_7pvs4fz1IZm,West Chester,19380,PA,29,3.29,Pizza Bagel With Mushroom,
+30,AVwc_jdF_7pvs4fz1IZm,West Chester,19380,PA,30,3.29,Pizza Bagel With Pepperoni,
+31,AVwc_jdF_7pvs4fz1IZm,West Chester,19380,PA,31,3.59,Pizza Bagel With Pepperoni and Mushroom,
+32,AVwc_JnXIN2L1WUfrB0m,San Jose,95123,CA,32,,Pizza Con Formaggio,
+33,AVwc_KyeIN2L1WUfrB_N,Menifee,92584,CA,33,8.99,Bbq Chicken Pizza,"BBQ Sauce, Mozzarella Cheese, diced Chicken Breast, Onions"
+90,AVwc16D3_7pvs4fzziP1,Lawrence Township,8648,Lawrenceville,90,19.95,Chicken Wing Pizza,"Hot sauce, celery, grilled chicken"

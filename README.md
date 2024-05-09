@@ -5,7 +5,6 @@ This project is part of the perfect memory developer training.
 This project parsers the data from a csv file, transform it into a rdfs graph and send to the exchange manager api to insert in the knowledge base. It uses an existing process called insertGraph to make this operation.
 
 
-
 ## Setup
 
 To set up the project, follow these steps:

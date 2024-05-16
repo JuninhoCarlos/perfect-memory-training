@@ -7,6 +7,7 @@ from rdflib.namespace import RDF, RDFS, XSD
 class PizzaModel:
     def __init__(self, pizza_dict: dict) -> None:
         # Do the mapping from the json keys to the object attributes
+        self.pizza_id = pizza_dict.get("pizza_id", "")
 
         self.label = pizza_dict.get("pizza_name", "")
         # pizza ingredient has multiple values
@@ -15,7 +16,7 @@ class PizzaModel:
         self.price = pizza_dict.get("pizza_price") or "0.0"
 
         # random uuid attribute set at build stage
-        self.random_uuid = None
+        self.uuid = None
 
     def __str__(self) -> str:
         """
@@ -41,14 +42,12 @@ class PizzaModel:
         else:
             g = rooted_node
 
-        if not self.random_uuid:
-            self.random_uuid = uuid.uuid4()
+        if not self.uuid:
+            self.uuid = uuid.uuid5(uuid.NAMESPACE_DNS, self.pizza_id)
 
         g.add(
             (
-                URIRef(
-                    f"http://www.perfect-memory.com/profile/pizza/kb/{self.random_uuid}"
-                ),
+                URIRef(f"http://www.perfect-memory.com/profile/pizza/kb/{self.uuid}"),
                 RDF.type,
                 URIRef("http://www.perfect-memory.com/ontology/pizza/1.1#Pizza"),
             )
@@ -111,8 +110,8 @@ class PizzaModel:
             Graph: The graph with the pizza added.
         """
         graph = self._add_id(rooted_node)
-        graph = self._add_price(self.random_uuid, self.price, graph)
-        graph = self._add_en_label(self.random_uuid, self.label, graph)
+        graph = self._add_price(self.uuid, self.price, graph)
+        graph = self._add_en_label(self.uuid, self.label, graph)
 
         return graph
 

@@ -28,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 pizza_csv_parser = CsvParser(
-    args.path, ["pizza_price", "pizza_name", "pizza_description"]
+    args.path, ["pizza_price", "pizza_name", "pizza_description", "pizza_id"]
 )
 
 

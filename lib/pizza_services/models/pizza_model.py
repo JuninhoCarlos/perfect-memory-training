@@ -98,6 +98,63 @@ class PizzaModel:
         )
         return rooted_node
 
+    def _add_toppings(self, id_pizza: str, toppings: list, rooted_node: Graph) -> Graph:
+        """
+        Adds the toppings to an existing graph.
+
+        Args:
+            id_pizza (str): The id of the node to add the toppings to.
+            toppings (list): The list of toppings to add to the node.
+            rooted_node (Graph): The graph to add the toppings to.
+
+        Returns:
+            The graph with the toppings added.
+        """
+
+        for topping in toppings:
+            # Create a URI for the topping
+            topping_uuid = uuid.uuid5(uuid.NAMESPACE_DNS, topping)
+            topping_uri = URIRef(
+                f"http://www.perfect-memory.com/profile/pizza/kb/{topping_uuid}"
+            )
+
+            # add topping to the graph
+            # Doubt: Is the Topping in th pizza kb namespace of should has a different namespace
+            # add the Topping
+            rooted_node.add(
+                (
+                    topping_uri,
+                    RDF.type,
+                    URIRef("http://www.perfect-memory.com/ontology/pizza/1.1#Topping"),
+                )
+            )
+
+            # Add a triple to the graph stating that the pizza has the topping
+            rooted_node.add(
+                (
+                    URIRef(
+                        f"http://www.perfect-memory.com/profile/pizza/kb/{id_pizza}"
+                    ),
+                    URIRef("http://www.perfect-memory.com/ontology/pizza/1.1#topping"),
+                    topping_uri,
+                )
+            )
+
+            # Add a triple to the graph stating the type of the topping
+            rooted_node.add(
+                (
+                    topping_uri,
+                    RDF.type,
+                    URIRef("http://www.perfect-memory.com/ontology/pizza/1.1#Topping"),
+                )
+            )
+
+            # Add a triple to the graph stating the label of the topping (optional)
+            if topping != "":
+                rooted_node.add((topping_uri, RDFS.label, Literal(topping, lang="en")))
+
+        return rooted_node
+
     def build_node(self, rooted_node: Graph = None) -> Graph:
         """
         Builds the RDF graph for the pizza.
@@ -112,6 +169,9 @@ class PizzaModel:
         graph = self._add_id(rooted_node)
         graph = self._add_price(self.uuid, self.price, graph)
         graph = self._add_en_label(self.uuid, self.label, graph)
+
+        if self.ingredients:
+            graph = self._add_toppings(self.uuid, self.ingredients, graph)
 
         return graph
 
